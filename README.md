@@ -8,7 +8,7 @@ More information about this data can be found here:
 And the raw data can be found here:
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-A discription of the test, and data parsed from it,  can be found in the features.txt file.  
+A discription of the test, and data parsed from it,  can be found in the CodeBook.txt file.  
 
 This project's goal was to take the original study data and manipulate via R script it n the following way;
 
