@@ -15,7 +15,7 @@ tGravityAcc-XYZ
 tBodyAccJerk-XYZ
 tBodyGyro-XYZ
 tBodyGyroJerk-XYZ
-tBodyAccMag
+tBodyAccMag 
 tGravityAccMag
 tBodyAccJerkMag
 tBodyGyroMag
