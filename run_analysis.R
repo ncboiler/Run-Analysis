@@ -72,9 +72,7 @@ for (i in 1:nrow(TestData)){
 
 #pair down the data frame to only measurements of mean and sdev
 KeepMean <- grep("mean", names(TestData))
-TestDataMean <- TestData[,KeepMean]
 KeepStd <- grep("std", names(TestData))
-TestDataStd <- TestData[,KeepStd]
 TestData <- TestData[c(1,2,KeepStd, KeepMean)]
 
 ## This section of the code creates a data set with the average of each variable 
@@ -87,5 +85,5 @@ GroupAverages <- rbind(GroupAverages,aggregate(TestData[,3:ncol(TestData)],
 colnames(GroupAverages)[1] <-"Average of Subjects and Activities"
 
 #remove the mess of unneeded variables in the envirnment
-remove(features, TestDataStd, TestDataMean, Testsubjest, Trainsubject, Xtest, Xtrain, Ytrain,
+remove(features, Testsubjest, Trainsubject, Xtest, Xtrain, Ytrain,
        Ytest, featureVext, i, KeepMean, KeepStd)
